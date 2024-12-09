@@ -46,15 +46,18 @@ const Portfolio = () => {
           {portfolios.map(({ id, src, link, repo ,name ,tech}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg " >
               <img
-              style={{width:"90%",margin:"auto",borderRadius:"7px"}}
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105 h-2/4"
+                className="rounded-md duration-200 hover:scale-105 h-2/4 w-11/12 m-auto"
               />
-               <div style={{width:"90%",margin:"auto",padding:"3%",paddingTop:"3%",textAlign:'center'}}>
+               <div
+               className="w-full m-auto p-[3%] text-center"
+               >
                  <h5 className="m-2">{name}</h5>
               </div>
-              <div style={{width:"90%",margin:"auto",padding:"2%",paddingTop:"2%",textAlign:'center'}}>
+              <div
+               className="w-full m-auto p-[2%] h-[15%] text-center"
+               >
                  <p className="m-2 h-16">{tech}</p>
               </div>
               <div className="flex items-center justify-center">
